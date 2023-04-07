@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Formular na pridanie udajov do databazy pomocou "connect.php" -->
+<form method="post" action="Aplication.php">
+    <fieldset>
+      <legend>Osobne Udaje</legend>
+       Is there any alcohol in the blood?<br>
+       <input type="radio" name="Alc"
+       value="0" required="required" value="0"> yes 
+       <input type="radio" name="Alc"
+       value="1" required="required" value="1"> no <br>
+
+       Do you write messages when you drive a car??<br>
+       <input type="radio" name="TXT"
+       value="0" required="required" value="0"> yes
+       <input type="radio" name="TXT"
+       value="1" required="required" value="1"> no <br>
+
+       Do you drive aggressively or do you obey all the rules of the road?<br>
+       <input type="radio" name="RD"
+       value="0" required="required" value="0"> I drive aggressively <br>
+       <input type="radio" name="RD"
+       value="1" required="required" value="1"> I obey rules and drive calmly <br>
+
+        Do you wear seat belts?<br>
+       <input type="radio" name="Seat"
+       value="0" required="required" value="0"> yes
+       <input type="radio" name="Seat"
+       value="1" required="required" value="1"> no <br>
+
+       How much do you exceed the speed limit?<br>
+       <input name="Speed" placeholder="20" required="required"><br>
+
+       How many passengers do you have.<br>
+       <input type="radio" name="Pass"
+       value="0" required="required" value="0"> 0
+       <input type="radio" name="Pass"
+       value="1" required="required" value="1"> 1 
+       <input type="radio" name="Pass"
+       value="2" required="required" value="0"> 2
+       <input type="radio" name="Pass"
+       value="3" required="required" value="1"> 3
+       <input type="radio" name="Pass"
+       value="4" required="required" value="0"> 4<br>
+
+       Good weather?<br>
+       <input type="radio" name="Weat"
+       value="0" required="required" value="0"> yes
+       <input type="radio" name="Weat"
+       value="1" required="required" value="1"> no <br>
+
+       Which month?<br>
+        <select name="Mon" id="Mon">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+        </select><br>
+
+        Which Day?<br>
+        <select name="Day" id="Day">
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+        </select><br>
+
+        Time of day?<br>
+        <select name="Time" id="Time">
+            <option value="0">Midnight - 3 a.m.</option>
+            <option value="1">3 a.m. - 6 a.m.</option>
+            <option value="2"> a.m. - 9 a.m.</option>
+            <option value="3">9 a.m. - noon</option>
+            <option value="4">Noon - 3 p.m.</option>
+            <option value="5">3 p.m. - 6 p.m.</option>
+            <option value="6">6 p.m. - 9 p.m.</option>
+            <option value="7">9 p.m. - midnight</option>
+        </select><br>
+
+        Gender?<br>
+        <input type="radio" name="Gend"
+       value="0" required="required" value="0"> Man
+       <input type="radio" name="Gend"
+       value="1" required="required" value="1"> Woman <br>
+
+       Age?<br>
+       <input type="radio" name="Age"
+       value="0" required="required" value="0"> Over 20 years old <br>
+       <input type="radio" name="Age"
+       value="1" required="required" value="1"> Teens ages 15 - 19 <br>
+
+     </fieldset>
+    
+     
+     <input type="hidden" name="odoslane" value="1">
+     <button type="submit">OK</button>
+    </form>
+    <a href=""><button>Home</button></a>
+    </html>
